@@ -1,8 +1,17 @@
+const Employee = { 
+    name:"Alice", 
+    id:"123",
+    title: "" 
+}; 
 
-// name
-// id
-// title
-// getName()
-// getId()
-// getEmail()
-// getRole() // Returns 'Employee'
+function newEmployee (name, id, title) {
+    this.name = name;
+    this.id = id;
+    this.title = title;
+}
+
+
+getName()
+getId()
+getEmail()
+getRole() // Returns 'Employee'
