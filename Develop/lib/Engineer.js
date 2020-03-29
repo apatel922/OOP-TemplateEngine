@@ -1,18 +1,30 @@
 
-const Employee = require("Employee");
+const Employee = require("../lib/Employee");
 
 class Engineer extends Employee {
-    constructor(github) {  
-      super(area, perimeter);
-      this.sideA = sideA;
+    // github // GitHub username
+    constructor(name, id, email, github) {  
+      super(name, id, email);
+      this.github = github;
     }
   }
 
-// github // GitHub username
 
 // getGithub()
+Engineer.prototype.getGithub = function () {
+    return this.github;
+}
 
 // getRole() // Overridden to return 'Engineer'
+Engineer.prototype.getRole = function () {
+    return "Engineer";
+}
+
+var newEngi = new Engineer("Gimli", 1, "test@test.com", "GitHubUser");
+
+console.log(newEngi);
+newEngi.getGithub();
+newEngi.getRole();
 
 
 module.exports = Engineer;
