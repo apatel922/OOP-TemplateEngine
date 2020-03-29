@@ -28,7 +28,7 @@ Employee.prototype.getRole = function () {
     return "Employee";
 }
 
-// Bring alice to life
+// Bring Alice to life
 var crazyAlice = new Employee("Alice", 100, "test@test.com");
 
 crazyAlice.getName();
