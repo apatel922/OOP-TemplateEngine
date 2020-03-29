@@ -1,26 +1,40 @@
 
-function Employee (name, id, title) {
-    this.name = name;
-    this.id = id;
-    this.title = title;
+class Employee {
+    constructor (name, id, email) {
+        this.name = name;
+        this.id = id;
+        this.email = email;
+    }
 }
 
 // getName()
-Employee.prototype.getName = function () {}
+Employee.prototype.getName = function () {
+    // console.log(this.name);
+    return this.name;
+}
 
 // getId()
-Employee.prototype.getID = function () {}
+Employee.prototype.getId = function () {
+    return this.id;
+}
 
 // getEmail()
-Employee.prototype.getEmail = function () {}
+Employee.prototype.getEmail = function () {
+    return this.email;
+}
 
 // getRole() // Returns 'Employee' 
-Employee.prototype.getRole = function () {}
+Employee.prototype.getRole = function () {
+    return "Employee";
+}
 
 
+var crazyAlice = new Employee("Alice", 100, "test@test.com");
 
-var e = new Employee("Alice", 100, "Engineer");
-
+crazyAlice.getName();
+crazyAlice.getId();
+crazyAlice.getEmail();
+crazyAlice.getRole();
 
 
 module.exports = Employee;

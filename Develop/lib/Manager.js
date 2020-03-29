@@ -3,4 +3,4 @@
 
 // getRole() // Overridden to return 'Manager'
 
-module.exports = Manager;
+// module.exports = Manager;
