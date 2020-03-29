@@ -1,23 +1,26 @@
-// const Employee = { 
-//     name:"Alice", 
-//     id:"123",
-//     title: "" 
-// }; 
 
 function Employee (name, id, title) {
-    this.newName = name;
-    this.newID = id;
-    this.newTitle = title;
+    this.name = name;
+    this.id = id;
+    this.title = title;
 }
-
-var alice = new Employee("Alice", 100, "");
-
-Employee.prototype.getName = function () {
-    console.log("Name: " + this.newName + "\nID: " + this.newID + "\nTitle: " + this.newTitle);
-}
-
 
 // getName()
+Employee.prototype.getName = function () {}
+
 // getId()
+Employee.prototype.getID = function () {}
+
 // getEmail()
+Employee.prototype.getEmail = function () {}
+
 // getRole() // Returns 'Employee' 
+Employee.prototype.getRole = function () {}
+
+
+
+var e = new Employee("Alice", 100, "Engineer");
+
+
+
+module.exports = Employee;
