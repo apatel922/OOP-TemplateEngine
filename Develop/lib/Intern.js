@@ -20,7 +20,7 @@ Intern.prototype.getRole = function () {
 }
 
 
-var newIntern = new Intern("Gimli", 1, "test@test.com", "GitHubUser");
+var newIntern = new Intern("Frodo", 1, "test@test.com", "UCLA");
 
 console.log(newIntern);
 newIntern.getSchool();
