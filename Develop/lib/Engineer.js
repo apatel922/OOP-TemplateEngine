@@ -22,7 +22,7 @@ Engineer.prototype.getRole = function () {
 
 var newEngi = new Engineer("Gimli", 1, "test@test.com", "GitHubUser");
 
-console.log(newEngi);
+// console.log(newEngi);
 newEngi.getGithub();
 newEngi.getRole();
 

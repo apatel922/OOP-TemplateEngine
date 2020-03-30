@@ -22,7 +22,7 @@ Intern.prototype.getRole = function () {
 
 var newIntern = new Intern("Frodo", 1, "test@test.com", "UCLA");
 
-console.log(newIntern);
+// console.log(newIntern);
 newIntern.getSchool();
 newIntern.getRole();
 

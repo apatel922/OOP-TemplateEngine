@@ -21,7 +21,7 @@ Manager.prototype.getRole = function () {
 
 var newMan = new Manager("Boromir", 1, "test@test.com", 100);
 
-console.log(newMan);
+// console.log(newMan);
 newMan.getRole();
 
 module.exports = Manager;
